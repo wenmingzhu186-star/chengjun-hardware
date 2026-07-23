@@ -1,0 +1,9 @@
+# Videos
+*.mp4
+*.avi
+*.mov
+products/工厂素材视频/
+
+# System files
+.DS_Store
+Thumbs.db

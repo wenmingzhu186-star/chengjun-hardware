@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品目录 - 诚峻建筑五金 | Product Catalog - Chengjun Hardware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+        :root { --primary: #064e3b; --accent: #d97706; }
+        body { font-family: 'Inter', 'Noto Sans SC', sans-serif; background: #f8fafc; }
+        .sidebar-link { display: block; padding: 14px 24px; border-bottom: 1px solid #f1f5f9; color: #475569; font-weight: 500; font-size: 14px; transition: 0.2s; }
+        .sidebar-link:hover, .sidebar-link.active { background: #f0fdf4; color: var(--primary); border-left: 3px solid var(--primary); }
+        .product-card { background: white; border-radius: 16px; padding: 20px; text-align: center; border: 1px solid #f1f5f9; transition: 0.3s; }
+        .product-card:hover { box-shadow: 0 12px 30px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .product-card img { width: 100%; height: 220px; object-fit: contain; margin-bottom: 16px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="bg-[#0f172a] text-white py-2 text-[11px] text-center">
+        <a href="./index.html" class="hover:text-amber-400"><i class="fas fa-arrow-left mr-2"></i>返回首页 / Back to Home</a>
+    </div>
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-emerald-900 mb-3">产品目录</h1>
+            <p class="text-slate-400 text-sm tracking-widest uppercase">Product Catalog · One-Stop Hardware Solutions</p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <!-- Sidebar -->
+            <aside class="lg:w-1/4">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden sticky top-6 border border-slate-100">
+                    <div class="bg-emerald-900 text-white px-6 py-4 font-bold text-sm tracking-widest uppercase">Categories 产品分类</div>
+                    <nav>
+                        <a href="#cat1" class="sidebar-link active">开窗控制系统 <span class="text-[10px] text-slate-300 ml-1">Actuators</span></a>
+                        <a href="#cat2" class="sidebar-link">门窗五金配件 <span class="text-[10px] text-slate-300 ml-1">Hardware</span></a>
+                        <a href="#cat3" class="sidebar-link">消防防火配套 <span class="text-[10px] text-slate-300 ml-1">Fire Safety</span></a>
+                        <a href="#cat4" class="sidebar-link">地弹簧及玻璃五金 <span class="text-[10px] text-slate-300 ml-1">Springs & Glass</span></a>
+                        <a href="#cat5" class="sidebar-link">不锈钢拉手系列 <span class="text-[10px] text-slate-300 ml-1">Handles</span></a>
+                        <a href="#cat6" class="sidebar-link">断桥铝系统配件 <span class="text-[10px] text-slate-300 ml-1">Aluminum Systems</span></a>
+                    </nav>
+                </div>
+            </aside>
+            <!-- Product Grid -->
+            <div class="lg:w-3/4">
+                <!-- Cat 1: Window Actuators -->
+                <div id="cat1" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">开窗控制系统 Window Actuators</h2>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="product-card">
+                            <img src="./products/开窗器系列/电动链条开窗器.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Electric Chain Opener</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">电动链条开窗器</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Electric Chain Window Opener</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/开窗器系列/电动螺杆开窗器.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Screw Opener</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">电动螺杆开窗器</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Electric Screw Window Opener</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/开窗器系列/手摇链条开窗器.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Manual Chain Opener</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">手摇链条开窗器</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Manual Chain Window Opener</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/开窗器系列/手摇曲臂开窗器.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Crank Arm Opener</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">手摇曲臂开窗器</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Manual Crank Arm Window Opener</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cat 2: Door & Window Hardware -->
+                <div id="cat2" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">门窗五金配件 Door & Window Hardware</h2>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="product-card">
+                            <img src="./products/合页.png" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Hinge</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">高强度合页</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">High-Strength Hinge Series</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/微信图片_20260605112516_728_59.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Hardware Kit</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">门窗五金配套</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Complete Hardware Kit</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/微信图片_20260605112526_729_59.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Lock Components</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">锁具配件系列</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Lock Components Series</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cat 3: Fire Safety -->
+                <div id="cat3" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">消防防火配套 Fire Safety</h2>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="product-card">
+                            <img src="./products/地弹簧系列/地弹簧1.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Floor Spring</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">地弹簧</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Floor Spring Series</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/地弹簧系列/地弹簧拉手3.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Spring Handle</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">地弹簧拉手</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Floor Spring Handle</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/地弹簧系列/地弹簧配件-玻璃夹4.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Glass Clamp</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">玻璃夹配件</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Glass Clamp Fittings</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="./products/地弹簧系列/地弹簧配件2.jpg" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><rect fill=%22%23f1f5f9%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%2394a3b8%22 font-size=%2212%22>Spring Parts</text></svg>'">
+                            <h5 class="font-bold text-sm text-slate-800">地弹簧配件</h5>
+                            <p class="text-[10px] text-slate-400 mt-1">Floor Spring Accessories</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cat 4: Glass Hardware -->
+                <div id="cat4" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">地弹簧及玻璃五金 Glass Door Hardware</h2>
+                    <p class="text-slate-400 text-sm mb-6">更多产品图片整理中，敬请期待。More products coming soon.</p>
+                </div>
+
+                <!-- Cat 5: Stainless Steel Handles -->
+                <div id="cat5" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">不锈钢拉手系列 Stainless Steel Handles</h2>
+                    <p class="text-slate-400 text-sm mb-6">更多产品图片整理中，敬请期待。More products coming soon.</p>
+                </div>
+
+                <!-- Cat 6: Aluminum Systems -->
+                <div id="cat6" class="mb-16">
+                    <h2 class="text-2xl font-bold text-emerald-900 mb-8 pb-4 border-b-2 border-emerald-900 inline-block">断桥铝系统配件 Aluminum System Components</h2>
+                    <p class="text-slate-400 text-sm mb-6">更多产品图片整理中，敬请期待。More products coming soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#050a14] text-slate-400 py-12 text-center text-[10px]">
+        <a href="./index.html" class="text-amber-500 hover:underline">返回首页</a> &nbsp;|&nbsp; 
+        <span>&copy; 2026 CHENGJUN HARDWARE | chengjunwujin.com</span>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

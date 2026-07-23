@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诚峻建筑五金 - 17年专业门窗系统与防火五金专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+        :root { --primary: #064e3b; --primary-light: #065f46; --accent: #d97706; }
+        body { font-family: 'Inter', 'Noto Sans SC', sans-serif; scroll-behavior: smooth; }
+        .lang-ar { font-family: 'Noto Sans Arabic', sans-serif; direction: rtl; }
+        .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('./factory/factory-bg.png'); background-size: cover; background-position: center; }
+        .btn-primary { background-color: var(--primary); color: white; transition: 0.3s; }
+        .btn-primary:hover { background-color: var(--primary-light); transform: translateY(-2px); }
+        .nav-item-dropdown { position: relative; }
+        .dropdown-menu { position: absolute; top: 100%; left: 0; background: white; min-width: 240px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-radius: 12px; padding: 15px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: 0.3s; z-index: 100; border-top: 3px solid var(--primary); }
+        .nav-item-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-link { display: block; padding: 10px 25px; color: #475569; font-size: 13px; font-weight: 500; transition: 0.2s; }
+        .dropdown-link:hover { background: #f8fafc; color: var(--primary); padding-left: 30px; }
+        .section-title::after { content: ''; display: block; width: 40px; height: 2px; background: var(--accent); margin: 1.2rem auto 0; }
+        .premium-card { background: white; border-radius: 20px; overflow: hidden; transition: 0.5s ease; }
+        .news-img-container { height: 280px; overflow: hidden; border-radius: 20px; }
+        .news-img-container img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s; }
+        .premium-card:hover .news-img-container img { transform: scale(1.08); }
+        .case-card-compact { height: 200px; border-radius: 12px; overflow: hidden; position: relative; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .case-card-compact img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .case-label-compact { position: absolute; bottom: 12px; left: 12px; background: rgba(6,78,59,0.95); padding: 4px 10px; font-size: 9px; font-weight: 700; color: white; border-left: 2px solid var(--accent); }
+        .footer-form-input { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; padding: 10px 14px; border-radius: 8px; width: 100%; outline: none; font-size: 12px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 text-sm">
+    <div class="bg-[#0f172a] text-white py-2 text-[11px] font-medium tracking-wide">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-8">
+                <span class="flex items-center"><i class="fas fa-phone-alt mr-2 text-amber-500"></i> +86 186-6470-9968</span>
+                <span class="flex items-center"><i class="fab fa-whatsapp mr-2 text-green-500"></i> +86 186-6470-9968</span>
+                <span class="flex items-center"><i class="fas fa-envelope mr-2 text-amber-500"></i> wenmingzhu186@gmail.com</span>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <button onclick="changeLang('en')" class="hover:text-amber-400">English</button><span class="opacity-20">|</span>
+                <button onclick="changeLang('zh')" class="hover:text-amber-400">中文</button><span class="opacity-20">|</span>
+                <button onclick="changeLang('ru')" class="hover:text-amber-400">Русский</button><span class="opacity-20">|</span>
+                <button onclick="changeLang('ar')" class="hover:text-amber-400">العربية</button>
+            </div>
+        </div>
+    </div>
+    <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="./certs/logo.jpg" alt="Logo" class="h-12">
+                <div class="ml-4 border-l pl-4 border-slate-200 hidden sm:block">
+                    <span class="block font-bold text-xl text-emerald-900 tracking-tight" data-t="brand">诚峻建筑五金</span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">chengjunwujin.com</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 font-bold text-[12px] items-center text-slate-500 uppercase">
+                <a href="#home" class="hover:text-emerald-700" data-t="nav_home">首页</a>
+                <div class="nav-item-dropdown">
+                    <a href="javascript:void(0)" class="hover:text-emerald-700 flex items-center" data-t="nav_products">产品目录 <i class="fas fa-chevron-down ml-1 text-[8px] opacity-50"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./catalog.html#cat1" class="dropdown-link" data-t="cat1_title">开窗控制系统</a>
+                        <a href="./catalog.html#cat2" class="dropdown-link" data-t="cat2_title">门窗五金配件</a>
+                        <a href="./catalog.html#cat3" class="dropdown-link" data-t="cat3_title">消防防火配套</a>
+                        <a href="./catalog.html#cat4" class="dropdown-link" data-t="cat4_title">地弹簧及玻璃五金</a>
+                        <a href="./catalog.html#cat5" class="dropdown-link">不锈钢拉手系列</a>
+                        <a href="./catalog.html#cat6" class="dropdown-link">断桥铝系统配件</a>
+                    </div>
+                </div>
+                <a href="#factory" class="hover:text-emerald-700" data-t="nav_factory">工厂实力</a>
+                <a href="#projects" class="hover:text-emerald-700" data-t="nav_projects">工程案例</a>
+                <a href="#news" class="hover:text-emerald-700" data-t="nav_news">新闻资讯</a>
+                <a href="#contact" class="hover:text-emerald-700" data-t="nav_contact_us">联系我们</a>
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-white" data-t="nav_quote">在线下单</a>
+            </nav>
+            <button class="lg:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <section id="home" class="hero-bg min-h-[600px] flex items-center text-white relative">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="inline-block border-l-4 border-amber-500 bg-white/10 px-4 py-1.5 text-[10px] font-bold rounded-r mb-6 tracking-widest uppercase">诚峻建筑五金 · 17年行业标杆</div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight" data-t="hero_title">高端 <span class="text-amber-500">门窗五金</span><br>消防排烟专家</h1>
+                <p class="text-lg md:text-xl text-slate-200 mb-10 font-light max-w-2xl" data-t="hero_desc">集生产、加工、工程配套为一体。深耕门窗五金17年，为全球大型工程提供一站式高端定制配套服务。</p>
+                <div class="flex gap-4">
+                    <a href="#products" class="btn-primary px-10 py-4 rounded-full font-bold transition flex items-center group"><span data-t="hero_btn1">关于我们</span><i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="py-24 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-8 section-title !text-left" data-t="about_title">公司介绍</h2>
+                    <p class="text-slate-600 text-lg leading-relaxed font-light mb-8" data-t="about_desc">佛山市诚峻建筑五金有限公司创立于2009年，总部坐落于中国著名的"小五金之乡"——广东金利镇。作为一家拥有17年深厚沉淀的建筑五金配件厂家，我们专注于高端门窗系统、消防安全五金及玻璃门控方案的研发与制造。</p>
+                    <p class="text-slate-600 text-lg leading-relaxed font-light mb-10">我们拥有先进的自动化生产线和精湛的技术团队，产品通过ISO 9001及多项国际标准认证，为全球大型建筑公司、门窗工厂及消防工程商提供一站式、专业化的配套供应及OEM/ODM定制服务。</p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="border-l-4 border-emerald-900 pl-6"><h4 class="text-2xl font-bold text-emerald-900 mb-1">17+</h4><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Years Experience</p></div>
+                        <div class="border-l-4 border-emerald-900 pl-6"><h4 class="text-2xl font-bold text-emerald-900 mb-1">5000+</h4><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Global Projects</p></div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2"><img src="./factory/office-pano.jpg" class="rounded-[40px] shadow-2xl"></div>
+            </div>
+        </div>
+    </section>
+    <section id="factory" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-20"><h2 class="text-4xl font-bold mb-4 section-title" data-t="fac_title">工厂实力 · 研发制造</h2></div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-20">
+                <img src="./factory/1.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+                <img src="./factory/2.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+                <img src="./factory/3.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+                <img src="./factory/4.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+                <img src="./factory/5.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+                <img src="./factory/factory-bg.png" class="rounded-2xl shadow-sm hover:scale-105 transition aspect-square object-cover">
+            </div>
+            <div class="bg-white p-10 rounded-[32px] shadow-sm border border-slate-100">
+                <h4 class="text-center font-bold text-emerald-900 mb-10 tracking-[0.2em] text-[10px] uppercase">Honor & Certificates</h4>
+                <div class="grid grid-cols-4 lg:grid-cols-8 gap-4">
+                    <img src="./certs/cert-(1).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(2).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(3).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(4).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(5).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(6).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(7).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                    <img src="./certs/cert-(8).jpg" class="h-28 object-contain bg-white p-2 rounded shadow-sm grayscale hover:grayscale-0 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-24 bg-[#050a14] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-16"><h2 class="text-4xl font-bold mb-4" data-t="proj_title">全球工程案例</h2><div class="h-1 w-16 bg-amber-500 mx-auto"></div></div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="case-card-compact group"><img src="./cases/gz-south-station.jpeg"><div class="case-label-compact uppercase">GZ South Station</div></div>
+                <div class="case-card-compact group"><img src="./cases/zhuhai-opera.png"><div class="case-label-compact uppercase">Zhuhai Opera</div></div>
+                <div class="case-card-compact group"><img src="./cases/hanrong.png"><div class="case-label-compact uppercase">Hanrong Xingyue</div></div>
+                <div class="case-card-compact group"><img src="./cases/tingyinhu.png"><div class="case-label-compact uppercase">Tingyinhu Sch.</div></div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16"><h2 class="text-4xl font-bold mb-4 section-title" data-t="news_title">新闻资讯</h2></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="premium-card group"><div class="news-img-container shadow-sm"><img src="https://sc02.alicdn.com/kf/Hdcbbdc53d2c84157bf7e567a9969e0fcM.jpg"></div><div class="py-6 px-1 text-center"><h4 class="text-lg font-bold text-emerald-900 group-hover:text-amber-600 transition" data-t="news1_title">广东诚峻足球队荣获全国村超总冠军</h4></div></div>
+                <div class="premium-card group"><div class="news-img-container shadow-sm"><img src="https://sc02.alicdn.com/kf/Hc77998aece2f45779524374f00db04e10.jpg"></div><div class="py-6 px-1 text-center"><h4 class="text-lg font-bold text-emerald-900 group-hover:text-amber-600 transition" data-t="news2_title">诚峻核心精英团队</h4></div></div>
+                <div class="premium-card group"><div class="news-img-container shadow-sm"><img src="./news2/展会/expo.jpg" onerror="this.src='https://sc02.alicdn.com/kf/Hda3acd850bdd42d4a9c4628bec4794e9o.jpg'"></div><div class="py-6 px-1 text-center"><h4 class="text-lg font-bold text-emerald-900 group-hover:text-amber-600 transition" data-t="news3_title">闪耀国际建博会</h4></div></div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="bg-[#050a14] text-slate-400 pt-24 pb-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16 border-b border-white/5 pb-16">
+                <div class="lg:col-span-1"><img src="./certs/logo.jpg" class="h-16 mb-8"><p class="text-[11px] leading-relaxed opacity-50">诚峻建筑五金<br>chengjunwujin.com</p></div>
+                <div class="lg:col-span-1"><h4 class="text-white font-bold mb-6 text-[10px] tracking-widest uppercase">Connect</h4><ul class="space-y-4 text-[11px]"><li><i class="fas fa-phone text-amber-500 mr-3"></i>186-6470-9968</li><li><i class="fab fa-whatsapp text-green-500 mr-3"></i>186-6470-9968</li><li><i class="fab fa-weixin text-green-400 mr-3"></i>186-6470-9968</li><li><i class="fas fa-envelope text-amber-500 mr-3"></i>wenmingzhu186@gmail.com</li><li><i class="fas fa-map-marker-alt text-amber-500 mr-3 mt-1"></i>广东金利镇金盛工业园</li></ul></div>
+                <div class="lg:col-span-1"><h4 class="text-white font-bold mb-6 text-[10px] tracking-widest uppercase" data-t="foot_inquiry_title">快速询价与下单</h4><form class="space-y-2"><input type="text" placeholder="Name" class="footer-form-input"><input type="email" placeholder="Email" class="footer-form-input"><textarea placeholder="Requirement..." class="footer-form-input h-20"></textarea><button class="btn-primary w-full py-2 rounded font-bold text-[9px] uppercase tracking-widest">SEND</button></form></div>
+                <div class="lg:col-span-1 text-center lg:text-right"><div class="inline-block bg-white p-2 rounded-xl"><img src="https://sc02.alicdn.com/kf/H719a8604aa114f378a790428ca6c36154.jpg" class="w-32 h-32"></div><p class="text-[9px] text-white/20 tracking-widest uppercase mt-4">WhatsApp QR</p></div>
+            </div>
+            <p class="text-center text-[9px] uppercase tracking-widest text-white/10">&copy; 2026 CHENGJUN HARDWARE | chengjunwujin.com</p>
+        </div>
+    </footer>
+    <script>
+        var T={en:{brand:"CHENGJUN HARDWARE",nav_home:"HOME",nav_products:"CATALOG",nav_factory:"FACTORY",nav_projects:"CASES",nav_news:"NEWS",nav_contact_us:"CONTACT",nav_quote:"ORDER",hero_title:"High-End Window Hardware & Fire Safety",hero_desc:"Manufacturer since 2009. One-stop premium hardware solutions for global architecture.",hero_btn1:"ABOUT US",about_title:"Company Profile",about_desc:"Foshan Chengjun Construction Hardware, established 2009, located in Guangdong Jinli - the famous Hardware Town.",cat1_title:"Window Actuators",cat2_title:"Door Hardware",cat3_title:"Fire Safety",cat4_title:"Glass Systems",fac_title:"Factory Strength",proj_title:"Global Projects",news_title:"News",news1_title:"National Champions",news2_title:"Elite Team",news3_title:"Expo Highlights",foot_inquiry_title:"Quick Inquiry"},zh:{brand:"诚峻建筑五金",nav_home:"首页",nav_products:"产品目录",nav_factory:"工厂实力",nav_projects:"工程案例",nav_news:"新闻资讯",nav_contact_us:"联系我们",nav_quote:"在线下单",hero_title:"高端 门窗五金 与 消防排烟系统专家",hero_desc:"集生产、销售、加工、工程配套为一体。深耕门窗五金17年，为全球大型工程提供一站式配套服务。",hero_btn1:"关于我们",about_title:"公司介绍",about_desc:"佛山市诚峻建筑五金有限公司创立于2009年，总部坐落于广东金利镇。专注高端门窗系统、消防安全五金及玻璃门控方案。",cat1_title:"开窗控制系统",cat2_title:"门窗五金配件",cat3_title:"消防防火配套",cat4_title:"地弹簧及玻璃五金",fac_title:"工厂实力 · 研发制造",proj_title:"全球工程案例",news_title:"新闻资讯",news1_title:"广东诚峻足球队荣获全国村超总冠军",news2_title:"诚峻核心精英团队",news3_title:"闪耀国际建博会",foot_inquiry_title:"快速询价与下单"}};
+        function changeLang(l){document.body.className=l==='ar'?'bg-white text-slate-900 lang-ar':'bg-white text-slate-900';document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(function(e){var k=e.getAttribute('data-t');if(T[l]&&T[l][k])e.textContent=T[l][k];})}
+    </script>
+</body>
+</html>
